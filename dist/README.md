@@ -2,10 +2,10 @@
 
 ![License](https://img.shields.io/static/v1?label=License&message=MIT&color=BLUE) ![License](https://img.shields.io/static/v1?label=License&message=Apache&color=BLUE) ![License](https://img.shields.io/static/v1?label=License&message=GNU&color=BLUE) ![License](https://img.shields.io/static/v1?label=License&message=ISC&color=BLUE) ![License](https://img.shields.io/static/v1?label=License&message=OBSD&color=BLUE)
 
-# dsag
+# dsg
 
 ## Description
-dsg
+\sgd
 
 ## Table of Contents
 
@@ -17,13 +17,13 @@ dsg
 * [Questions](#questions)
 
 ## Installation
-dsg
+gds
 
 ## Usage
-dsg
+sgd
 
 ## Licenses
-undefined: undefined
+<a href = "https://opensource.org/licenses/MIT"> *MIT</a><br />,<a href = "https://opensource.org/licenses/MIT"> *MIT</a><br />,<a href = "https://opensource.org/licenses/MIT"> *MIT</a><br />,<a href = "https://opensource.org/licenses/MIT"> *MIT</a><br />,<a href = "https://opensource.org/licenses/MIT"> *MIT</a><br />
 
 ## Contributing
 sdg

@@ -1,4 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+// Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(licenses) {
   badge = [];
@@ -7,30 +7,35 @@ function renderLicenseBadge(licenses) {
           badge.push("![License](https://img.shields.io/static/v1?label=License&message=" + entry + "&color=BLUE)");
     })
     } else {
-      return '';
+      return;
     }
-  console.log(badge)
   return badge.join(' ');
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(licenses) {
-  if(licenses) {
-
-  } else {
-    return '';
-  }
-}
-
-// TODO: Create a function that returns the license section of README
+// Create a function that returns the license section of README and creates link
 // If there is no license, return an empty string
 function renderLicenseSection(licenses) {
-  if(licenses) {
-
+  licensesSection = [];
+  if (licenses !== 'None') {    
+    licenses.forEach(entry => {
+      if (entry = 'MIT') {
+          licensesSection.push('<a href = "https://opensource.org/licenses/MIT"> *' + entry + '</a><br />')
+      } else if (entry = 'Apache') {
+        licensesSection.push('<a href = "https://opensource.org/licenses/Apache-2.0"> *' + entry + '</a><br />')
+      } else if (entry = 'GNU') {
+          licensesSection.push('<a href = "https://opensource.org/licenses/gpl-license"> *' + entry + '</a><br />')
+      } else if (entry = 'ISC') {
+        licensesSection.push('<a href = "https://opensource.org/licenses/ISC"> *' + entry + '</a><br />')
+      } else if (entry = 'OBSD') {
+        licensesSection.push('<a href = "https://www.openbsd.org/policy.html"> *' + entry + '</a><br />')
+      } else {
+          return;
+      }
+  })
   } else {
     return '';
   }
+  return licensesSection;
 }
 
 // TODO: Create a function to generate markdown for README
@@ -61,7 +66,7 @@ ${installation}
 ${usage}
 
 ## Licenses
-${renderLicenseSection(licenses)}: ${renderLicenseLink(licenses)}
+${renderLicenseSection(licenses)}
 
 ## Contributing
 ${contributors}
