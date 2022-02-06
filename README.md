@@ -4,7 +4,7 @@
 Create a readme file for your respository based on a questionaire using Javascript and Node.js.
 
 ## Screenshot
-<img src = "./images/screenshotreadmegenie.jpg alt="Screenshot of the ReadMe generated"></img>
+<img src="./images/screenshotreadmegenie.jpg" alt="Screenshot of the ReadMe generated"></img>
 
 ## Video                    
 https://watch.screencastify.com/v/EacfyHnpyBrdPo8aefLA
