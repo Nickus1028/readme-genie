@@ -18,7 +18,6 @@ function renderLicenseSection(licenses) {
   licensesSection = [];
   if (licenses !== 'None') {    
     licenses.forEach(entry => {
-      console.log(entry)
       if (entry === 'MIT') {
           licensesSection.push('* <a href = "https://opensource.org/licenses/MIT">' + entry + '</a><br />')
       } else if (entry === 'Apache') {
