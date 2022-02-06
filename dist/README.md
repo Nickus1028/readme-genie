@@ -1,11 +1,11 @@
 
 
-![License](https://img.shields.io/static/v1?label=License&message=MIT&color=BLUE) ![License](https://img.shields.io/static/v1?label=License&message=Apache&color=BLUE) ![License](https://img.shields.io/static/v1?label=License&message=GNU&color=BLUE) ![License](https://img.shields.io/static/v1?label=License&message=ISC&color=BLUE) ![License](https://img.shields.io/static/v1?label=License&message=OBSD&color=BLUE)
+![License](https://img.shields.io/static/v1?label=License&message=GNU&color=BLUE)
 
-# sadsa
+# ReadMe Generator
 
 ## Description
-asfd
+This code creates a ReadMe based on criteria.
 
 ## Table of Contents
 
@@ -17,22 +17,22 @@ asfd
 * [Questions](#questions)
 
 ## Installation
-afs
+Navigate to the root folder of index.js and run it using node.
 
 ## Usage
-afs
+Anytime you need a readme for your respository.
 
 ## Licenses
-<li><a href = "https://opensource.org/licenses/MIT">MIT</a></li><li><a href = "https://opensource.org/licenses/Apache-2.0">Apache</a></li><li><a href = "https://opensource.org/licenses/gpl-license">GNU</a></li><li><a href = "https://opensource.org/licenses/ISC">ISC</a></li><li><a href = "https://www.openbsd.org/policy.html">OBSD</a></li>
+<li><a href = "https://opensource.org/licenses/gpl-license">GNU</a></li>
 
 ## Contributing
-saaf
+Nick B
 
 ## Tests
-asf
+Created several readme with different criteria
 
 ## Questions
 Contact information for questions:  
 
-Github: https://www.github.com/saf  
-Email: afs
+Github: https://www.github.com/nickus1028  
+Email: nick@test.com
