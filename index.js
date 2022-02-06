@@ -82,7 +82,7 @@ function writeToFile (readME) {
               }
               success({
                   ok: true,
-                  message: 'Successfully generated a Readme at ./dist/README.md'
+                  message: 'Successfully generated a ReadMe at ./dist/README.md'
             });
         });
     });
