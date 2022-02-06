@@ -1,11 +1,11 @@
 
 
-![License](https://img.shields.io/static/v1?label=License&message=GNU&color=BLUE)
+![License](https://img.shields.io/static/v1?label=License&message=Apache&color=BLUE) ![License](https://img.shields.io/static/v1?label=License&message=GNU&color=BLUE)
 
 # ReadMe Generator
 
 ## Description
-This code creates a ReadMe based on criteria.
+Create a readme file for your respository based on a questionaire.
 
 ## Table of Contents
 
@@ -17,19 +17,19 @@ This code creates a ReadMe based on criteria.
 * [Questions](#questions)
 
 ## Installation
-Navigate to the root folder of index.js and run it using node.
+Navigate to the index.js file in Terminal and run it using node.
 
 ## Usage
-Anytime you need a readme for your respository.
+Create a readme for any of your repositories.
 
 ## Licenses
-<li><a href = "https://opensource.org/licenses/gpl-license">GNU</a></li>
+<li><a href = "https://opensource.org/licenses/Apache-2.0">Apache</a></li><li><a href = "https://opensource.org/licenses/gpl-license">GNU</a></li>
 
 ## Contributing
 Nick B
 
 ## Tests
-Created several readme with different criteria
+Ran it several times to create multiple ReadMes
 
 ## Questions
 Contact information for questions:  
