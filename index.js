@@ -1,14 +1,14 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
-const fs = require('fs')
+const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
-const questions = [];
-
-const promptUser = () => {
+const questions = () => {
+    answers = []
     return inquirer.prompt ([
         {
             type: 'input',
-            name: 'Title',
+            name: 'title',
             message: 'What is the Title of your project (REQUIRED)?',
             validate: titleInput => {
                 if (titleInput) {
@@ -22,38 +22,38 @@ const promptUser = () => {
         },
         {
             type: 'input',
-            name: 'Description',
+            name: 'description',
             message: 'What is the description of your project?',
         },
         {
             type: 'input',
-            name: 'Installation',
+            name: 'installation',
             message: 'What are the instructions for installation?'
         },
         {
             type: 'input',
-            name: 'Usage',
+            name: 'usage',
             message: 'What are some examples of uses for your application?'
         },
         {
             type: 'checkbox',
-            name: 'Licenses',
+            name: 'licenses',
             message: 'Which licenses? Choose all that apply.',
             choices: ['MIT', 'Apache','GNU','ISC', 'OBSD', 'None' ]
         },
         {
             type: 'input',
-            name: 'Contributors',
+            name: 'contributors',
             message: 'Who were the contributing developers including yourself?'
         },
         {
             type: 'input',
-            name: 'Tests',
-            message: 'List some tests for your application.'
+            name: 'tests',
+            message: 'What are some tests you performed for your application.'
         },
         {
             type: 'input',
-            name: 'Username',
+            name: 'username',
             message: 'What is your Github username? (REQUIRED)',
             validate: userinput => {
                 if (userinput) {
@@ -70,13 +70,39 @@ const promptUser = () => {
             message: 'What is your email?'
         }
     ])
-}
+};
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile (readME) {
+    return new Promise((success, failure) => {
+        fs.writeFile('./dist/README.md', readME, err => {
+            if (err) {
+                failure(err);
+                return;
+              }
+              success({
+                  ok: true,
+                  message: 'Successfully generated a Readme at ./dist/README.md'
+            });
+        });
+    });
+};
+
 
 // TODO: Create a function to initialize app
-function init() {}
-
 // Function call to initialize app
-init();
+
+questions()
+    .then(answers => {
+        return generateMarkdown(answers);
+    })
+    .then(readME => {
+        return writeToFile(readME)
+    })
+    .then(writefileResponse => {
+        console.log(writefileResponse.message)
+    })
+    .catch(err => {
+        console.log(err);
+        });
+
