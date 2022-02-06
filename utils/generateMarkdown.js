@@ -20,15 +20,15 @@ function renderLicenseSection(licenses) {
     licenses.forEach(entry => {
       console.log(entry)
       if (entry === 'MIT') {
-          licensesSection.push('<a href = "https://opensource.org/licenses/MIT"> * ' + entry + '</a><br />')
+          licensesSection.push('* <a href = "https://opensource.org/licenses/MIT">' + entry + '</a><br />')
       } else if (entry === 'Apache') {
-        licensesSection.push('<a href = "https://opensource.org/licenses/Apache-2.0"> * ' + entry + '</a><br />')
+        licensesSection.push('* <a href = "https://opensource.org/licenses/Apache-2.0">' + entry + '</a><br />')
       } else if (entry === 'GNU') {
-          licensesSection.push('<a href = "https://opensource.org/licenses/gpl-license"> * ' + entry + '</a><br />')
+          licensesSection.push('* <a href = "https://opensource.org/licenses/gpl-license">' + entry + '</a><br />')
       } else if (entry === 'ISC') {
-        licensesSection.push('<a href = "https://opensource.org/licenses/ISC"> * ' + entry + '</a><br />')
+        licensesSection.push('* <a href = "https://opensource.org/licenses/ISC">' + entry + '</a><br />')
       } else if (entry === 'OBSD') {
-        licensesSection.push('<a href = "https://www.openbsd.org/policy.html"> * ' + entry + '</a><br />')
+        licensesSection.push('* <a href = "https://www.openbsd.org/policy.html">' + entry + '</a><br />')
       }
   })
   } else {
