@@ -1,11 +1,11 @@
 
 
-![License](https://img.shields.io/static/v1?label=License&message=MIT,Apache,GNU,ISC,OBSD&color=BLUE)
+![License](https://img.shields.io/static/v1?label=License&message=MIT&color=BLUE) ![License](https://img.shields.io/static/v1?label=License&message=Apache&color=BLUE) ![License](https://img.shields.io/static/v1?label=License&message=GNU&color=BLUE) ![License](https://img.shields.io/static/v1?label=License&message=ISC&color=BLUE) ![License](https://img.shields.io/static/v1?label=License&message=OBSD&color=BLUE)
 
-# tewst
+# dsag
 
 ## Description
-asf
+dsg
 
 ## Table of Contents
 
@@ -17,22 +17,22 @@ asf
 * [Questions](#questions)
 
 ## Installation
-asfa
+dsg
 
 ## Usage
-asf
+dsg
 
 ## Licenses
 undefined: undefined
 
 ## Contributing
-asffs
+sdg
 
 ## Tests
-asfs
+sdg
 
 ## Questions
 Contact information for questions:  
 
-Github: https://www.github.com/asf  
-Email: afs
+Github: https://www.github.com/sdg  
+Email: sdg

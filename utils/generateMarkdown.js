@@ -1,11 +1,16 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(licenses) {
-  if(licenses) {
-    return "![License](https://img.shields.io/static/v1?label=License&message=" + licenses + "&color=BLUE)"
-  } else {
-    return '';
-  }
+  badge = [];
+  if (licenses !== 'None') {    
+      licenses.forEach(entry => {
+          badge.push("![License](https://img.shields.io/static/v1?label=License&message=" + entry + "&color=BLUE)");
+    })
+    } else {
+      return '';
+    }
+  console.log(badge)
+  return badge.join(' ');
 }
 
 // TODO: Create a function that returns the license link
